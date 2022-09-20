@@ -1,8 +1,12 @@
-const sidebar = document.getElementsByClassName("tm-page__sidebar");
+window.addEventListener('click', function () {
+    const sidebar = document.querySelectorAll(
+    ".tm-sexy-sidebar," +
+    " .tm-sexy-sidebar_stick-top," +
+    " .tm-page__sidebar");
 
-
-if (sidebar) {
+for (let i = 0; i < sidebar.length; i++) {
   // If sider is here
   // add attribute display: None
-  sidebar.item(0).setAttribute("style", "display:none;")
-}
+  sidebar.item(i).setAttribute("style", "display:none;");
+  }
+});
